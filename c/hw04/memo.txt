@@ -1,0 +1,37 @@
+1
+pick the index whose value is strictly lower than that of castles tile
+-> check the cross direction 
+-> no need to check evvery element in non matching direction 
+-> let [i][k] be the index being checked.
+-> [i][k] : [y + 1][x], [y][x + 1], [y -1][x], [y][x - 1]
+1) checkiing if the index checked is out of the range with checking function
+checkRange: if !(0 <= index && size - 1 >= index) return false.
+2) check if you need to increment/decrement on a certain direction
+if([y + 1][x] < [y][k]) -> y(i) ++;
+if([y - 1][x] < [y][k]) -> y(i) --;
+if([y][x -1] < [y][k]) -> x(i) --;
+if([y][x + 1] < [y][k]) -> x(i) ++;
+
+2
+ compute all the possible rectangle
+1) store the needed info for checking if it forms rectangle
+concatenation of two arrays (one array having the line from top to one above the line which includes castle)
+(the other one having from one below to the bottom)
+
+
+4) choose the biggest one
+
+
+
+2
+get the rectangle
+
+
+
+3 
+calculate the size by width*height
+a)
+ width = the largest colum number - smallest colum number + 1
+ height = the largerst row number - smallest row number + 1
+
+
